@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My resume</title>
+    <head></head>
+    <body>
+        <img src="img.jpeg" alt="photo" width="200" height="250">
+    <h1>Rybak Karyna</h1>
+    <p>I am 24 years</p>
+    <h4>Contact Information</h4>
+        <ul>
+            <li>Mohyliv Podilskyi</li>
+                <li>Email:"yurievnakarina2@gmail.com"</li>
+       <h3>Now I work as an administrator</h3>
+    <p>Worked before that:
+    <ul>
+        <li>dental assistant</li>
+        <li>a pharmacist</li>
+        </ul>
+    </p>
+    <p>My personal qualities:</p>
+    <ol>
+        <li>Communication</li>
+        <li>Analytical thinking</li>
+        <li>Creativity</li>
+        <li>Organization</li>
+        <li>Stress resistance</li>
+        <li>Responsibility</li>
+        <li>Adaptability</li>
+    
+    </ol>
+        <h4>languages:</h4>
+            <p>English, Ukrainian, German</p>
+        </h4>
+        <a href="https://www.instagram.com/karina_yurievna9/">My Instagram</a>
+    </body>
+    </html>
