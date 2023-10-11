@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <link href="./form.css" rel="stylesheet">
+</head>
+<body>
+     <form action="#" method="get" name="register">
+        <label>
+            <h3>Full name</h3>
+            <input type="text" name="full_name" id="full-name" placeholder="Full Name" required>
+        </label>
+         <label>
+            <h3>Email</h3>
+            <input type="Email" name="email" id="email" placeholder="Email" required>
+        </label>
+        <label>
+            <h3>Password</h3>
+            <input type="password" name="password" placeholder="Password" required>
+        </label>
+        <label>
+            <h3>Repeat Password</h3>
+            <input type="pass" name="pass" placeholder="Repeat the password" required>
+            </label>
+            <label>
+                <h3>Gender</h3>
+                <div class="gender">
+                    <label>
+                        <input type="radio" name="gender" id="male" required>
+                        <p>male</p>
+                </label>
+                <label> 
+                    <input type="radio" name="gender" id="female" required>
+                    <p>female</p>
+                </label>
+            </div>
+            </label>
+                <label>
+                    <h3>Age</h3>
+                    <input type="number" name="number"placeholder="Age"min="16"required>
+                    </label>
+                    <label>
+                        <h3>Course</h3>
+                        <select name="courses" id="courses">
+                            <option value="">Choose your course</option>
+                            <option value="Front-end">Front-end</option>
+                            <option value="UiUX">UI/UX</option>
+                            <option value="Back-end">Back-end</option>
+                            </select>
+                         </label>
+                         <label>
+                            <h3>Full address</h3>
+                            <textarea> name="adress" id="adress" placeholder="Country,Region,City,Street"</textarea>
+                         </label>
+                         <label class="checkbox">
+                            <input type="checkbox">
+                            <h3>I agree with my data usage</h3>
+                        </label>
+                        <div class="btns">
+                            <input type="reset" value="Reset a form">
+                            <input type="submit" value="Register">
+             </div>
+      </form>
+   </body>
+   </html>
+    
+
+
+
+
+

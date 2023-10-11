@@ -1,0 +1,79 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form {
+    max-width: 700px;
+    width: 100%;
+    min-height: 700px;
+    height: auto;
+    background-color: rgb(204, 201, 201);
+    padding: 30px;
+}
+label {
+width: 100%;
+display: flex;
+height: 60px;
+justify-content: space-between;
+align-items: center;
+}
+h3 {
+    font-weight: 400px;
+    font-size: 18px;
+}
+
+input {
+    height: 35px;
+    width: 250px;
+}
+.gender {
+    display: flex;
+    margin-right: 10px;
+    gap: 15px;
+}
+.gander label {
+    display:flex ;
+    align-items:center;
+}
+input[type="radio"] {
+    width: 50px;
+    margin-right: 20px;
+}
+select {
+    width: 250px;
+    height: 40px;
+    padding: 10px;
+}
+
+textarea {
+    width: 250px;
+    height: 50px;
+    display: flex;
+    align-items: start;
+}
+.checkbox {
+    display: flex;
+    justify-content: start;
+}
+input[type="checkbox"] {
+width: 30px;
+margin-right: 10px;
+}
+input[type="button"] {
+    max-width: 140px;
+    width: 100%;
+}
+.btns {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
