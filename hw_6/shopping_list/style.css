@@ -1,0 +1,105 @@
+* {
+  transition: all .1s ease-in;
+}
+.container {
+  width: 100%;
+  max-width: 793px;
+  height: 82px;
+  margin: 0 auto;
+}
+header {
+  background: #4A4F56;
+}
+body {
+  background: #3B3F45;
+  box-sizing: border-box;    
+}
+ h1{
+  color: #FF8984;
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+  padding-top: 19px;
+  padding-bottom: 4px;
+}
+p {
+  color: #FF8984;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  padding-bottom: 35px;
+  padding-top: 4px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #3B3F45;
+}
+label {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-family: Roboto;
+  color: #f6f6f6;
+  width: 534px;
+  height: 45px;
+}
+span {
+  margin: 3px 0 0 4px;
+  font-family: Roboto;
+  color: #FFF;
+  font-size: 11px;
+  font-weight: 400;
+}
+span:before{
+  content:"(";
+}
+span:after {
+  content: ")";
+}
+.container_1, .container_2{
+  display: flex;
+  flex-direction: row;
+  border: 4px solid(0,0,0,0);
+}
+.container_1 {
+  background: #88839E;
+}
+.container_2 {
+  background: #7A7593;
+}
+.container_1:hover, .container_2:hover {
+  border-top: 4px solid white;
+  border-bottom: 4px solid white;
+  background: #625E77;
+}
+.container_1:active, .container_2:active {
+  background: #FF8984;
+}
+input {
+  margin: 12px 14px 12px;
+  width: 19px;
+  height: 19px;
+}
+input:checked +label {
+  text-decoration: line-through;
+  color: #9B96AC;
+}
+input:checked {
+  content: url("checklist.png");
+}
+button {
+  color: #FF8984;
+  background: #4A4F56;
+  width: 534px;
+  height: 45px;
+  margin-top: 74px;
+  margin-bottom: 57px;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+}
