@@ -1,0 +1,277 @@
+.container {
+  width: 100%;
+  max-width: 970px;
+  margin: 100px auto 0; 
+}
+header {
+  border-bottom:1px solid black;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header ul {
+  display: flex;
+}
+header ul li {
+  margin-right: 40px;
+  font-size: 18px;
+  border-bottom: none; 
+}
+header ul li:last-child{
+  margin-right: 0;
+}
+header ul li a {
+  color: grey;
+  font-family: Open Sans;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.36px;
+  text-decoration: none;
+  transition: font-weight 0.3s ease;
+}
+header ul li a:hover {
+  color: black;
+  font-weight: 700;
+}
+div h1 {
+  color:#070707;
+  margin-right: 385px;
+  margin-left: 385px;
+  font-size: 48px;
+  font-weight: 700;
+  margin-top: 12px;
+}
+.photo img {
+  width: 970px;
+  height: 387px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+}
+.about div {
+  margin-top: 15px;
+  background: #f6f6f6;
+  padding: 100px;
+}
+.about h1 {
+  margin-bottom: 50px;
+  color:#070707;
+  text-align: center;
+  font-size: 34px;
+  font-weight: 700;
+}
+.about p {
+  color:#070707;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+about p:last-child {
+  margin-bottom: 0;
+}
+.skills h2 {
+  text-align: center;
+  font-size: 34px;
+  font-weight: 700;
+  margin-top: 100px;
+  margin-bottom: 20px;
+}
+.skills h3 {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 50px;
+}
+div img.icon {
+  margin-bottom: 25px;
+  width: 80px;
+  height: 80px;
+  display: block;
+  margin: 0 auto;
+}
+.skills star img {
+  margin-right: 10px;
+  width: 26px;
+  height: 26px;
+}
+.skills p {
+  color: #828282;
+  display: flex;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.28px; 
+  margin-bottom: 60px;
+}
+div img.icon_2 {
+  width: 53px;
+  height: 80px;
+  margin-bottom: 25px;
+  text-align: center;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+.scills img {
+  margin-right: 10px;
+  width: 26px;
+  height: 26px;
+}
+.skills div {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+.skills div{
+  display: inline-block;
+  margin-right: 97px;
+}
+.skills div:last-child {
+  margin-right: 0;
+}
+.Portfolio div {
+  background: #f6f6f6;
+}
+.Portfolio h2 {
+  text-align: center;
+  font-size: 34px;
+  font-weight: 700;
+  line-height: normal;
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+.Portfolio img {
+  width: 970px;
+  height: 540px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+}
+.Portfolio p {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  padding-bottom: 70px;
+}
+.Portfolio a {
+  color: rgb(0, 0, 0);
+  text-decoration-line: underline;
+}
+.Reebok div {
+  background: #f6f6f6; 
+}
+.Reebok img {
+  width: 970px;
+  height: 540px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+}
+.Reebok p {
+  text-align: center;
+  font-size: 18px;
+  padding-bottom: 70px;
+}
+.Reebok a {
+  color: rgb(0, 0, 0);
+  text-decoration-line: underline;
+}
+.Braun div {
+  background-color: #f6f6f6;
+}
+.Braun img {
+  width: 970px;
+  height: 540px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+}
+.Braun p {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+}
+.Braun a {
+  color: rgb(0, 0, 0);
+  text-decoration-line: underline;
+}
+footer h2 {
+  text-align: center;
+  font-size: 34px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  margin-top: 100px;
+}
+footer h3 {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 60px;
+}
+button {
+  background-color: #070707;
+  border-radius: 22px;
+  width: 180px;
+  height: 44px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+}
+.button {
+  color: #FFF;
+  text-align: center;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 1.8px;
+}
+button:hover{
+  opacity: 0.8;
+}
+.social {
+  text-align: center;
+}
+.social li {
+  display: inline;
+  text-align: center; 
+}
+.social li a {
+  width: 310px;
+  gap: 50px;
+}
+nav ul li a {
+  font-family: Open Sans;
+  text-decoration: none;
+  transition: font-weight 0.3s ease;
+}
+footer img {
+  margin-right: 50px;
+  width: 40px;
+  height: 40px;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+footer nav.social ul li a:hover {
+  opacity: 0.5;
+}
+footer h4 {
+  color: #828282;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 60px;
+  margin-bottom: 100px;
+}
+footer button:hover {
+  background-color: #ff6600;
+  color: #fff;
+  transform: scale(1.1);
+  transition: 0.3s; 
+}
