@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Francois+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Farro:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Farro&display=swap');
+.container {
+width: 1200px;
+max-width: 1440px;
+margin: 0 auto;
+}
+header {
+display: flex;
+height: 80px;
+padding: 13px 120px;
+justify-content: space-between;
+align-items: center;
+}
+.img_eng {
+margin-right: 50px;
+}
+.menu li a {
+margin-left: 10px;
+margin-right: 10px;
+color: #000;
+text-decoration: none;
+}
+.menu {
+display: flex;
+list-style-type: none;
+padding: 0;
+margin: 0;
+}
+.menu li {
+font-family: Staatliches;
+font-size: 22px;
+font-weight: 400;
+letter-spacing: 0.66px;
+line-height: 48px;
+text-transform: uppercase;
+font-style: normal;
+}
+.container main {
+width: 1200px;
+max-width: 1440px;
+margin: 0 auto;
+}
+h2 {
+color: #000;
+margin-top: 40px;
+margin-bottom: 70px;
+font-family: Francois One;
+font-size: 36px;
+font-style: normal;
+font-weight: 400;
+line-height: 48px;
+letter-spacing: 1.44px;
+text-transform: uppercase;
+}
+.raise {
+position: relative;
+top: -10px;
+color: #000;
+font-feature-settings: 'sups' on;
+font-family: Farro;
+font-size: 30px;
+font-style: normal;
+font-weight: 300;
+line-height: normal;
+letter-spacing: 1.2px;
+ }
+p {
+color: #000;
+font-family: PT Sans;
+font-size: 28px;
+font-style: normal;
+font-weight: 400;
+line-height: 48px;
+}
+.bold {
+font-weight: bold;
+}
+.underline {
+text-decoration: underline;
+}
+.highlight{
+background-color: lightgray;
+}
+.highlight::after {
+content: "</Text>";
+}
+.italic {
+font-style: italic;
+}
