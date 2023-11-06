@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Delius+Unicase:wght@400;700&display=swap');
+*{
+box-sizing: border-box;
+}
+main {
+display: grid;
+grid-template-columns: 1fr;
+grid-template-rows: repeat(3, auto);
+gap: 120px;
+}
+.container {
+width: 100%;
+max-width:1140px;
+margin: 0 auto;
+}
+h2 {
+color: #000;
+font-family: Delius Unicase;
+text-align: center;
+font-size: 36px;
+font-weight: 400;
+letter-spacing: 1.8px;
+margin-bottom: 80px;
+}
+.gallery {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-template-rows: repeat(3, 370px);
+gap:30px;
+grid-template-areas: "item_1 item_2 item_2"
+                     "item_3 item_3 item_4"
+                     "item_5 item_6 item_6";
+}
+.item:nth-child(1) {
+grid-area: item_1;
+}
+.item:nth-child(2) {
+grid-area: item_2;
+}
+.item:nth-child(3) {
+grid-area: item_3;
+}
+.item:nth-child(4) {
+grid-area: item_4;
+}
+.item:nth-child(5) {
+grid-area: item_5;
+}
+.item:nth-child(6) {
+grid-area: item_6;
+}
+div.item {
+border-radius: 20px;
+background: var(--blure, linear-gradient(0deg, #241F24 0%, rgba(91, 91, 91, 0.45) 34.11%, rgba(187, 186, 192, 0.26) 62.5%));
+position: relative;
+overflow: hidden;
+}
+.item img {
+width: 100%;
+height: 100%;
+position: absolute;
+top: 0;
+left: 0;
+z-index: -1;
+}
+.content {
+width: 100%;
+height: 100%;
+color: #FFF;
+display: flex;
+justify-content: space-between;
+align-items: flex-end;
+padding:0 20px 20px 20px;
+box-sizing: border-box;
+}
+.content span.author {
+color: #FFF;
+font-family: Roboto;
+font-size: 20px;
+font-weight: 500;
+}
+.content span.date {
+color:#E0E0E0;
+font-family: Roboto;
+font-size: 20px;
+font-weight: 400;
+}
+.second_gallery {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-template-rows: repeat(3, 370px);
+gap:30px;
+grid-template-areas: "card_1 card_2 card_2"
+                     "card_3 card_3 card_4"
+                     "card_5 card_6 card_6";
+}
+.card:nth-child(1) {
+grid-area: card_1;
+}
+.card:nth-child(2) {
+grid-area: card_2;
+}
+.card:nth-child(3) {
+grid-area: card_3;
+}
+.card:nth-child(4) {
+grid-area: card_4;
+}
+.card:nth-child(5) {
+grid-area: card_5;
+}
+.card:nth-child(6) {
+grid-area: card_6;
+}
+div .card {
+border-radius: 20px;
+background: var(--blure, linear-gradient(0deg, #241F24 0%, rgba(91, 91, 91, 0.45) 34.11%, rgba(187, 186, 192, 0.26) 62.5%));
+position: relative;
+overflow: hidden;
+}
+div .card img {
+width: 100%;
+height: 100%;
+position: absolute;
+top: 0;
+left: 0;
+z-index: -1;
+}
+.third_gallery {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-template-rows: repeat(5, 370px);
+gap: 30px;
+grid-template-areas: "cell_1 cell_2 cell_3"
+                       "cell_4 cell_2 cell_5"
+                       "cell_6 cell_7 cell_5"
+                       "cell_6 cell_8 cell_8"
+                       "cell_9 cell_9 cell_10";
+}
+.cell:nth-child(1) {
+grid-area: cell_1;
+}
+.cell:nth-child(2) {
+grid-area: cell_2;
+}
+.cell:nth-child(3) {
+grid-area: cell_3;
+}
+.cell:nth-child(4) {
+grid-area: cell_4;
+}
+.cell:nth-child(5) {
+grid-area: cell_5;
+}
+.cell:nth-child(6) {
+grid-area: cell_6;
+}
+.cell:nth-child(7) {
+grid-area: cell_7;
+}
+.cell:nth-child(8) {
+grid-area: cell_8;
+}
+.cell:nth-child(9) {
+grid-area: cell_9;
+}
+.cell:nth-child(10) {
+grid-area: cell_10;
+}
+div .cell {
+border-radius: 20px;
+background: var(--blure, linear-gradient(0deg, #241F24 0%, rgba(91, 91, 91, 0.45) 34.11%, rgba(187, 186, 192, 0.26) 62.5%));
+position: relative;
+overflow: hidden;
+}
+div.cell img {
+width: 100%;
+height: 100%;
+position: absolute;
+top: 0;
+left: 0;
+z-index: -1;
+}
+.hidden.icons img{
+width: 40px;
+height: 40px;
+} 
+.hidden.hand img {
+width: 25px;
+height: 25px;
+}
+main.section_3.third_gallery.icons {
+display: flex;
+justify-content:space-between;
+}
+.icon-download {
+top: 20px;
+left: 300px;
+position: absolute;
+}
+.icon-like {
+top: 20px;
+left: 20px;
+position: absolute;
+}
+div.hidden div.hand img {
+width: 20px;
+height: 20px;
+top: 60px;
+left: 20px;
+}
+.hidden {
+opacity: 0;
+}
+.cell:hover > .hidden {
+opacity: 1;
+transition: all 1s ease-in;
+}
