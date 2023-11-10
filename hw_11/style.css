@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Francois+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Farro:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Farro&display=swap');
+*{
+    box-sizing: border-box;
+}
+.container {
+width: 100%;
+max-height:3081px;;
+display: flex;
+margin: 0 auto; 
+}
+header {
+display: flex;
+height: 54px;
+padding: 13px 120px;
+justify-content: space-between;
+align-items: center;
+margin-top: 13px;
+position: fixed;
+top: 0;
+left: 0;
+}
+.menu li a {
+margin-left: 10px;
+margin-right: 10px;
+color: #000;
+text-decoration: none;
+font-weight: bold;
+}
+.menu {
+font-family: Staatliches;
+font-size: 22px;
+font-weight: 400;
+letter-spacing: 0.66px;
+line-height: 48px;
+font-style: normal;
+text-decoration: none;
+}
+.menu {
+display: flex;
+list-style-type: none;
+padding: 0;
+margin: 0;
+}
+.bg {
+width: 760px;
+height: 760px; 
+position: fixed; 
+right: 0;
+top: 70px;
+z-index: -1;
+}
+.container main {
+height: 385px;
+max-width: 1440px;
+margin: 0 auto;
+} 
+.main_text {
+display: grid;
+grid-template-columns: 365px 785px;
+gap: 70px;
+margin-top: 70px;
+margin-bottom: 90px;
+}
+.side-bar nav { 
+display: flex;
+height: 385px;
+flex-direction: column;
+padding: 10px; 
+position: sticky; 
+top: 70px;  
+height: 70px;
+}
+div.side-bar ul {
+display: flex;
+padding: 10px;
+flex-direction: column;
+align-items: flex-start;
+gap: 70px;
+}
+.side-bar li a {
+color: #000;
+font-family: Francois One;
+font-size: 36px;
+font-style: normal;
+font-weight: 400;
+line-height: 48px; 
+letter-spacing: 1.44px;
+text-transform: uppercase;
+text-decoration: none;   
+}
+.divider {
+background-color: black;
+width: 100px;
+height: 8px;
+margin-top: 40px;
+}
+h2 {
+color: #000;
+margin-top: 40px;
+margin-bottom: 70px;
+font-family: Francois One;
+font-size: 36px;
+font-style: normal;
+font-weight: 400;
+line-height: 48px;
+letter-spacing: 1.44px;
+text-transform: uppercase;
+}
+.raise {
+position: relative;
+top: -10px;
+color: #000;
+font-feature-settings: 'sups' on;
+font-family: Farro;
+font-size: 30px;
+font-style: normal;
+font-weight: 300;
+line-height: normal;
+letter-spacing: 1.2px;
+}
+p {
+color: #000;
+font-family: PT Sans;
+font-size: 28px;
+font-style: normal;
+font-weight: 400;
+line-height: 48px;
+}
+.bold {
+font-weight: bold;
+}
+.underline {
+text-decoration: underline;
+}
+.highlight{
+background-color: lightgray;
+ }
+.highlight::after {
+content: "</Text>";
+}
+.italic {
+font-style: italic;
+}
+    
