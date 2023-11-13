@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Farro&family=Quicksand:wght@500&family=Roboto&display=swap');
+:root {
+--color-1:#D1E7FF;
+--color-2:#B9DCFF;
+--color-3: #E8F3FF;
+--color-4:#B9DCFF;
+--color-5:#D1E7FF;
+--color-6:#D1E7FF;
+--color-7:#D1E7FF;
+--color-8:#007FFC;
+stroke: #007FFC;;
+}
+* {
+box-sizing: border-box;
+}
+header {
+display: flex;
+width: 100%;
+max-width:1440px;
+height: 80px;
+margin-bottom: 100px;
+align-items: center;
+border-bottom: 1px solid #e5eaf4;
+}
+header h3 {
+color:#16133D;
+font-family: Quicksand;
+font-size: 35px;
+font-weight: 500;
+line-height: 35px;
+margin-left: 10px; 
+}
+.heading a {
+color:#7690A8;
+font-family: Roboto;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+text-decoration: none;
+}
+.heading h2 {
+color: #16133D;
+font-family: Nunito Sans;
+font-size: 40px;
+font-style: normal;
+font-weight: 600;
+line-height: 52px;
+letter-spacing: 0.2px;
+margin-top: 15px;
+margin-bottom: 40px;
+}
+svg {
+width: 64px;
+height: 64px;
+}
+.items:hover svg {
+--color-1:#E1F4F5;
+--color-2:#E1F4F5;
+--color-3: #F4FEFF;
+--color-4:#CAEFF2;
+--color-5:#E1F4F5;
+--color-6:#CAEFF2;
+--color-7:#CAEFF2;
+--color-8:#52C29D;
+stroke-opacity: 0,5;
+stroke: #52C29D;
+}
+#content {
+display: flex;
+justify-content: flex-start;
+gap: 30px; 
+}
+#content div.items {
+border-radius: 8px;
+border: 1px solid #e5eaf4;
+}
+#content .items:hover {
+border-color: #3db370;
+}
+.items {
+display: flex;
+width: 370px;
+height: 340px;
+padding: 40px;
+flex-direction: column;
+}
+main .items h3 {
+align-items: flex-start;
+color: #16133D;
+font-family: Roboto;
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+letter-spacing: 0.2px;
+margin-top: 30px;
+}
+main .items p {
+margin-top: 15px;
+margin-bottom: 30px;
+color: #16133D;
+font-family: Roboto;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 28px; 
+}
+footer {
+width: 100%;
+padding: 0 30px;
+background: #16133D;
+margin-top: 100px;   
+}
+footer h3 { 
+color: #FFF;
+font-family: Quicksand;
+font-size: 35px;
+font-style: normal;
+font-weight: 500;
+line-height: 35px; 
+color: #FFF;
+padding: 0 30px;  
+}
+footer nav a {
+text-align: center;   
+}
+footer img {
+margin-top: 40px;
+}
+footer nav ul {
+display: flex;
+gap: 10px;
+margin-top: 40px;
+} 
+footer li a {
+text-decoration: none;
+}
+footer nav li a i {
+width: 38px;
+height: 38px;
+border-radius: 5px;
+background: #EFEEF3;
+padding: 9px;
+border-radius: 5px;
+margin-bottom: 40px;
+}
+footer nav li a i:hover {
+color: #3db370;
+}
