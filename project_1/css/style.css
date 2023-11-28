@@ -121,16 +121,19 @@ section.travel .chevron-down {
   width: 100%;
   height: 84px;
 }
-.menu-item nav {
-  display: inline-flex;
-  align-items: center;
+.menu-item .burger-menu {
+  display: none;
+  cursor: pointer;
 }
-.menu-item ul {
-  display: flex;
+.menu-item .burger-menu span {
+  display: block;
+  width: 30px;
+  height: 3px;
+  background-color: var(--White, #FFF);
+  margin: 6px 0;
 }
-.menu-item h3 {
+.menu-item h3.logo {
   display: flex;
-  width: 168px;
   height: 20px;
   color: #FFF;
   font-family: "Josefin Sans", sans-serif;
@@ -140,18 +143,23 @@ section.travel .chevron-down {
   line-height: 28px;
   letter-spacing: 2.4px;
   text-transform: uppercase;
-  margin-right: 300px;
-  margin-left: 100px;
   text-decoration: none;
 }
-.menu-item li {
+.menu-item nav {
+  display: inline-flex;
+  align-items: center;
+}
+.menu-item nav ul {
+  display: flex;
+}
+.menu-item nav ul li {
   color: #FFF;
   display: flex;
   justify-content: center;
   margin-right: 40px;
   gap: 577px;
 }
-.menu-item .menu-item li a {
+.menu-item nav ul li a {
   color: #FFF;
   font-family: "Aleo", sans-serif;
   font-size: 14px;
@@ -162,29 +170,34 @@ section.travel .chevron-down {
   text-transform: uppercase;
   text-decoration: none;
 }
-.menu-item .menu-item li:last-child {
-  margin-right: 0;
+
+.menu-item.active {
+  height: 150px;
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  grid-template-areas: "burger logo" "nav nav";
 }
-.menu-item .burger-menu {
-  display: none;
-  cursor: pointer;
+.menu-item.active .logo {
+  grid-area: logo;
+  justify-content: flex-end;
 }
-.menu-item .burger-menu.active {
+.menu-item.active .burger-menu.active {
+  grid-area: burger;
   display: block;
 }
-.menu-item .burger-menu span {
-  display: block;
-  width: 30px;
-  height: 3px;
-  background-color: var(--White, #FFF);
-  margin: 6px 0;
+.menu-item.active nav {
+  grid-area: nav;
+  display: flex;
 }
-@media screen and (max-width: 768px) {
+
+@media (max-width: 768px) {
   .menu-item .burger-menu {
     display: block;
   }
+  .menu-item nav {
+    display: none;
+  }
 }
-
 section.chooseUs {
   width: 100%;
   max-width: 1920%;
@@ -500,3 +513,5 @@ footer .socials nav ul {
 .socials nav ul li a:hover img {
   filter: invert(100%) sepia(1) saturate(5) hue-rotate(45deg);
 }
+
+/*# sourceMappingURL=style.css.map */
