@@ -9,20 +9,20 @@
   </head>
   <body>
     <main>
-      <section class="container">
         <section class="travel"> 
+          <div class="container">
           <h2>Bhromaon</h2>
           <p>Safe Travel Anywhere</p>
-          <form class="search-form">
+          <form class="search-form" action="#" method="get">
             <label>
               <input type="text" id="destination" name="destination" class="search-input" placeholder="Search Your Travel Destination">
             </label>
             <button type="submit" class="search-button">Search</button>
-            <img src="icons/search.svg"alt="search icon" class="search-icon">
-           </form>
-           <a href="#ChooseUs">Scroll Down</a>
-           <img src="icons/chevron-down.svg"alt="chevron-down" class="chevron-down"> Scroll Down
-</section>
+            </form>
+            <img src="./img/search.svg" alt="search icon" class="search-icon">
+           <a href="#ChooseUs"class="scroll-down-link">Scroll Down</a>
+           <img src="./img/chevron-down.svg" alt="chevron-down" class="chevron-down">
+           </div>
 <div class="menu-item">
   <div class="burger-menu">
     <span></span>
@@ -31,7 +31,7 @@
   </div>
   <nav>
     <h3>Bhromaon</h3>
-    <ul></ul>
+    <ul>
       <li><a href="#">Who We Are</a></li>
       <li><a href="#">What We Do</a></li>
       <li><a href="#">Travel With Us</a></li>
@@ -39,8 +39,9 @@
     </ul>
   </nav>
 </div>
-<section class="ChooseUs">
-  <section class="Choose">
+</section>
+<section class="chooseUs">
+  <section class="choose">
   <div class="content">
     <h2>Why Choose Us</h2>
     <p>
@@ -53,30 +54,30 @@
     <button>Explore Places</button>
   </div>
   <div class="images">
-    <img src="Image1.png"class="img_1">
-    <img src="Image2.png" class="img_2">
+    <img src="./img/image1.png" class="img_1" alt="img">
+    <img src="./img/image2.png" class="img_2" alt="img">
   </div>
   </section>
   <div class="icon-box">
     <div class="icon-container">
       <div class="line">
-        <img src="icons/search.svg">
+        <img src="./img/search.svg" alt="search">
         <h4>Search Places</h4>
       </div>
     </div>
     <div class="icon-container">
       <div class="line">
-      <img src="icons/check-circle.svg">
+      <img src="./img/check-circle.svg" alt="check-circle">
       <h4>Select Places</h4>
     </div>
     </div>
       <div class="icon-container">
-        <img src="icons/thumbs-up.svg">
+        <img src="./img/thumbs-up.svg" alt="thumbs-up">
         <h4>Book & Enjoy</h4>
       </div>
     </div>
   </section>
-  <section class="GrandSpain">
+  <section class="grand_spain">
     <div class="content_1">
       <div class="card">
         <h4>Spain</h4>
@@ -94,15 +95,15 @@
         </div>
       </div>
     </section>
-    <section class="OurTourist">
+    <section class="our_tourist">
       <h2>What Our Tourists Say</h2>
       <div class="photo">
-        <img src="Photo.png"alt="Tourist Photo">
+        <img src="./img/photo.png" alt="Tourist Photo">
       </div>
       <div class="card">
         <div class="content">
           <h3>Sam Sumon</h3>
-          <img src=".//icons/quote-left.svg" class="quote-left">
+          <img src="./img/quote-left.svg" class="quote-left" alt="quote-left">
           <p>But I must explain to you how all this mistaken idea of account to denouncinpleasure and praising pain But I must explain to you how all this mistaken idea of account to nai denouncing pleasure and praising pain was account born and I account will give you a complete account of the system was account born and I account will give you a nai the complete account of the system</p>
         </div>
       </div>
@@ -115,16 +116,23 @@
       <div class="socials">
         <nav>
           <ul>
-            <li><a href="#"><img src="./icons/facebook-f.svg" alt="facebook"></a></li>
-            <li><a href="#"><img src="./icons/twitter.svg" alt="twitter"></a></li>
-            <li><a href="#"><img src="./icons/linkedin.svg" alt="linkedin"></a></li>
-            <li><a href="#"><img src="./icons/youtube.svg" alt="youtube"></a></li>
-            <li><a href="#"><img src="./icons/pinterest.svg" alt="pinterest"></a></li>
+            <li><a href="#"><img src="./img/facebook-f.svg" alt="facebook"></a></li>
+            <li><a href="#"><img src="./img/twitter.svg" alt="twitter"></a></li>
+            <li><a href="#"><img src="./img/linkedin.svg" alt="linkedin"></a></li>
+            <li><a href="#"><img src="./img/youtube.svg" alt="youtube"></a></li>
+            <li><a href="#"><img src="./img/pinterest.svg" alt="pinterest"></a></li>
           </ul>
         </nav>
       </div>
     </footer>
-</section>
 </main>
+<script>
+let burger = document.querySelector(".burger-menu");
+let menu = document.querySelector(".menu-item");
+burger.addEventListener("click", function () {
+burger.classList.toggle("active");
+menu.classList.toggle("active");
+});
+</script>
 </body>
 </html>
