@@ -11,6 +11,7 @@ section.travel {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-size: cover;
 }
 section.travel .container {
   width: 100%;
@@ -18,12 +19,20 @@ section.travel .container {
   margin: 0 auto;
 }
 section.travel .search-form {
-  width: 647px;
+  width: 100%;
+  max-width: 647px;
   height: 60px;
   display: flex;
   align-items: center;
   margin: 0 auto;
   position: relative;
+}
+@media (max-width: 768px) {
+  section.travel .search-form .search-input,
+  section.travel .search-form label {
+    width: 100%;
+    max-width: none;
+  }
 }
 section.travel h2 {
   color: #FFF;
@@ -81,12 +90,11 @@ section.travel .search-button {
   background: #5373FD;
 }
 section.travel .search-icon {
-  position: absolute;
-  left: 510px;
-  margin-right: 12px;
   width: 16px;
   height: 16px;
-  flex-shrink: 0;
+  position: relative;
+  right: -71%;
+  top: -30px;
   filter: invert(100%);
 }
 section.travel .scroll-down-link {
@@ -129,12 +137,13 @@ section.travel .chevron-down {
   display: block;
   width: 30px;
   height: 3px;
-  background-color: var(--White, #FFF);
+  background-color: #FFF;
   margin: 6px 0;
 }
 .menu-item h3.logo {
   display: flex;
   height: 20px;
+  margin: 20px;
   color: #FFF;
   font-family: "Josefin Sans", sans-serif;
   font-size: 24px;
@@ -193,6 +202,7 @@ section.travel .chevron-down {
 @media (max-width: 768px) {
   .menu-item .burger-menu {
     display: block;
+    margin: 15px;
   }
   .menu-item nav {
     display: none;
@@ -200,30 +210,23 @@ section.travel .chevron-down {
 }
 section.chooseUs {
   width: 100%;
-  max-width: 1920%;
+  max-width: 1920px;
   background-image: url("../img/WhyBackground.jpg");
 }
 section.chooseUs .choose {
   width: 100%;
   display: flex;
+  align-items: center;
   justify-content: space-between;
   gap: 136px;
   padding: 124px 112px 124px 0px;
 }
-section.chooseUs .img_1 {
-  margin-right: 74px;
-  width: 350px;
-  height: 220px;
-}
-section.chooseUs .content {
-  margin: 136px;
+section.chooseUs .choose .content {
   display: block;
+  margin: 20px;
 }
-section.chooseUs .images {
-  margin: 136px;
-}
-section.chooseUs h2 {
-  color: var(--White, #FFF);
+section.chooseUs .choose .content h2 {
+  color: #FFF;
   font-family: Aleo;
   font-size: 36px;
   font-style: normal;
@@ -232,8 +235,8 @@ section.chooseUs h2 {
   text-transform: capitalize;
   margin-bottom: 24px;
 }
-section.chooseUs p {
-  color: var(--White, #FFF);
+section.chooseUs .choose .content p {
+  color: #FFF;
   font-family: Josefin Sans;
   font-size: 16px;
   font-style: normal;
@@ -242,12 +245,12 @@ section.chooseUs p {
   letter-spacing: 1.6px;
   margin-bottom: 32px;
 }
-section.chooseUs button {
+section.chooseUs .choose .content button {
   width: 213px;
   height: 60px;
   flex-shrink: 0;
-  background: var(--Accent, #5373FD);
-  color: var(--White, #FFF);
+  background: #5373FD;
+  color: #FFF;
   text-align: center;
   font-family: Aleo;
   font-size: 16px;
@@ -257,42 +260,60 @@ section.chooseUs button {
   letter-spacing: 1.12px;
   text-transform: uppercase;
 }
-section.chooseUs .chooseUs .images {
-  width: 350px;
-  height: 220px;
+@media (max-width: 768px) {
+  section.chooseUs .choose {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 768px) and (max-width: 768px) {
+  section.chooseUs .images {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  section.chooseUs .images img {
+    width: 100%;
+  }
+}
+section.chooseUs .content {
+  margin: 20px;
+}
+section.chooseUs .images {
+  width: 100%;
   display: block;
-  margin-top: 124px;
 }
-section.chooseUs .chooseUs .images img {
-  width: 350px;
-  height: 220px;
+section.chooseUs .images .img_1 {
+  margin-left: 74px;
+  margin-bottom: 16px;
 }
-
-.icon-container {
+section.chooseUs .icon-container {
   display: flex;
-  width: 424px;
-  height: 139px;
   align-items: center;
+  width: 424px;
   gap: 4px;
 }
-
-.icon-box {
+section.chooseUs .icon-box {
+  width: 100%;
+  max-width: 1320px;
+  height: 306px;
   display: flex;
   justify-content: center;
   position: relative;
-  margin-right: 120px;
   margin-left: 50px;
 }
-
-.line {
+section.chooseUs .icon-box img {
+  padding: auto;
+}
+section.chooseUs .line {
   width: 872px;
   height: 90px;
   border-radius: 50%;
   border-top: 1px dashed #FFF;
 }
-
-h4 {
-  color: var(--White, #FFF);
+section.chooseUs h4 {
+  color: #FFF;
   text-align: center;
   font-family: Aleo;
   font-size: 36px;
@@ -315,8 +336,11 @@ h4 {
   max-width: 1920px;
   height: 684px;
   position: relative;
+  background-size: cover;
+  background-position: center;
 }
-.grand_spain .card {
+.grand_spain .content_1 .card,
+.grand_spain .content_2 .card {
   width: 648px;
   height: 344px;
   position: absolute;
@@ -324,7 +348,43 @@ h4 {
   left: 300px;
   background: rgba(35, 35, 35, 0.9);
 }
-.grand_spain h4 {
+@media (max-width: 768px) {
+  .grand_spain .content_1 .card,
+  .grand_spain .content_2 .card {
+    width: auto;
+    max-width: none;
+    position: relative;
+    top: auto;
+    left: auto;
+    right: auto;
+    margin: 20px 10px;
+    margin-top: 220px;
+  }
+}
+.grand_spain .content_1 .card_2,
+.grand_spain .content_2 .card_2 {
+  width: 648px;
+  max-width: 100%;
+  height: 344px;
+  position: absolute;
+  bottom: 120px;
+  right: 300px;
+  background: rgba(35, 35, 35, 0.9);
+}
+@media (max-width: 768px) {
+  .grand_spain .content_1 .card_2,
+  .grand_spain .content_2 .card_2 {
+    width: auto;
+    max-width: none;
+    position: relative;
+    top: auto;
+    left: auto;
+    right: auto;
+    margin: 20px 40px;
+    margin-top: 220px;
+  }
+}
+.grand_spain h5 {
   color: #FFF;
   font-family: Josefin Sans;
   font-size: 20px;
@@ -372,14 +432,6 @@ h4 {
   text-transform: uppercase;
   background: #486BFE;
 }
-.grand_spain .card_2 {
-  width: 648px;
-  height: 344px;
-  position: absolute;
-  bottom: 120px;
-  right: 300px;
-  background: rgba(35, 35, 35, 0.9);
-}
 .grand_spain .content_1 {
   background-image: url("../img/spain1.png");
 }
@@ -388,16 +440,23 @@ h4 {
 }
 
 .our_tourist {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
   max-width: 1920px;
   height: 680px;
   background-image: url("../img/bg.png");
   position: relative;
 }
+@media (max-width: 768px) {
+  .our_tourist {
+    height: auto;
+  }
+}
 .our_tourist h2 {
   padding-top: 120px;
-  color: var(--White, #FFF);
+  color: #FFF;
   text-align: center;
   font-family: Aleo;
   font-size: 36px;
@@ -414,6 +473,14 @@ h4 {
   bottom: 180px;
   right: 0;
 }
+@media (max-width: 768px) {
+  .our_tourist .card {
+    width: 100%;
+    position: relative;
+    left: auto;
+    bottom: auto;
+  }
+}
 .our_tourist .content {
   width: 885px;
   height: 280px;
@@ -422,11 +489,48 @@ h4 {
   box-sizing: border-box;
   justify-content: center;
 }
+@media (max-width: 768px) {
+  .our_tourist .content {
+    display: block;
+    position: relative;
+    left: auto;
+    right: auto;
+    padding: 15px;
+  }
+}
 .our_tourist .photo {
+  width: 440px;
+  height: 280px;
+  object-fit: cover;
   position: absolute;
   left: 120px;
   top: 220px;
   bottom: 180px;
+}
+@media (max-width: 768px) {
+  .our_tourist .photo {
+    width: 100%;
+    max-width: none;
+    position: relative;
+    top: 10px;
+    left: auto;
+    right: auto;
+    margin: 20px 10px;
+  }
+}
+.our_tourist .content_3 {
+  display: flex;
+  flex-direction: column;
+  margin: 30px;
+}
+@media (max-width: 768px) {
+  .our_tourist .content_3 {
+    width: 100%;
+    position: relative;
+    bottom: auto;
+    margin-bottom: 20px;
+    margin: 22px;
+  }
 }
 .our_tourist h3 {
   color: #FFF;
@@ -447,30 +551,28 @@ h4 {
   font-weight: 300;
   line-height: 28px;
   letter-spacing: 1.6px;
-  margin: 60px;
 }
 .our_tourist .quote-left {
   position: relative;
-  top: 86px;
-  left: 30px;
+  top: 20px;
+  left: -25px;
   width: 20px;
   height: 20px;
+  color: #5373FD;
 }
 
 footer {
-  max-width: 1920px;
+  width: 100%;
   height: 268px;
   display: block;
-  width: 100%;
   background: #000;
 }
 footer .heading {
   padding-top: 80px;
   display: block;
   text-align: center;
-  justify-content: center;
 }
-footer h2 {
+footer .heading h2 {
   color: #FFF;
   font-family: Josefin Sans;
   font-size: 24px;
@@ -481,7 +583,7 @@ footer h2 {
   text-transform: uppercase;
   margin-bottom: 8px;
 }
-footer p {
+footer .heading p {
   color: #FFF;
   font-family: Josefin Sans;
   font-size: 14px;
@@ -498,20 +600,15 @@ footer .socials nav ul {
   display: flex;
   justify-content: center;
 }
-
-.socials nav ul li {
+footer .socials nav ul li {
   margin: 32px;
 }
-
-.socials nav ul li a img {
+footer .socials nav ul li a img {
   width: 20px;
   height: auto;
   filter: invert(1);
   transition: filter 0.3s ease;
 }
-
-.socials nav ul li a:hover img {
+footer .socials nav ul li a img:hover {
   filter: invert(100%) sepia(1) saturate(5) hue-rotate(45deg);
 }
-
-/*# sourceMappingURL=style.css.map */
