@@ -326,6 +326,75 @@ section.chooseUs h4 {
   bottom: -5px;
 }
 
+.steps {
+  background-color: #333;
+  padding-bottom: 60px;
+}
+.steps .container {
+  max-width: 1320px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+.steps .container .lines {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.steps .container .lines svg {
+  position: relative;
+  top: 65px;
+  max-width: 872px;
+  width: 100%;
+}
+.steps .container .items {
+  width: 100%;
+  display: flex;
+  gap: 25px;
+}
+.steps .container .items .item {
+  max-width: 424px;
+  width: 100%;
+  height: 139px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.steps .container .items .item svg {
+  width: 64px;
+  height: 64px;
+  margin-bottom: 20px;
+}
+.steps .container .items .item h3 {
+  color: #FFF;
+  text-align: center;
+  font-family: "Aleo";
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+  text-transform: capitalize;
+}
+
+@media (max-width: 900px) {
+  .steps .container .lines svg {
+    max-width: 440px;
+  }
+}
+@media (max-width: 750px) {
+  .steps {
+    padding-top: 60px;
+  }
+  .steps .container .lines {
+    display: none;
+  }
+  .steps .container .items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .grand_spain {
   display: flex;
   flex-direction: column;
@@ -612,3 +681,5 @@ footer .socials nav ul li a img {
 footer .socials nav ul li a img:hover {
   filter: invert(100%) sepia(1) saturate(5) hue-rotate(45deg);
 }
+
+/*# sourceMappingURL=style.css.map */
