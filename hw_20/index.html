@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>js_form</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<form id="myForm">
+    <label for="name">name:</label>
+    <input type="text" id="name" name="name" required autocomplete="on">
+
+    <label for="age">age:</label>
+    <input type="number" id="age" name="age" autocomplete="on">
+
+    <label for="message">message:</label>
+    <textarea id="message" name="message" rows="4" required autocomplete="on"></textarea>
+
+    <button type="button" onclick="submitForm()">send</button>
+</form>
+<script src="script.js"></script>
+</body>
+</html>
