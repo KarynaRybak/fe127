@@ -1,0 +1,135 @@
+header {
+  background-color: white;
+
+  .logo img {
+    width: 20vh;
+    height: 40px; 
+  }
+
+  .wrapper {
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  nav {
+    display: flex;
+    justify-content: center;
+
+    ul {
+      width: 600px;
+      gap: 10px;
+      display: flex;
+      justify-content: space-between;
+
+      a {
+        display: block;
+        font-size: 17px;
+        line-height: 20px;
+        font-weight: 500;
+        color: #adadad;
+        transition: 0.5s all ease-out;
+        text-decoration: none;
+
+        &:hover {
+          color: orange;
+        }
+      }
+
+      a.active {
+        color: orange;
+      }
+    }
+  }
+
+  .btn {
+    display: flex;
+    gap: 15px;
+
+    button {
+      width: 80px;
+      height: 40px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background-color: orange;
+      color: white;
+      border: unset;
+      padding: 5px 10px;
+      margin-left: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+      text-decoration: none;
+    }
+  }
+
+  .burger {
+    display: none;
+    flex-direction: column;
+    padding: 15px;
+    gap: 6px;
+    cursor: pointer;
+    margin-right: 15%;
+
+    span {
+      width: 25px;
+      height: 3px;
+      background-color: black;
+      display: block;
+      
+    }
+}
+
+  @media (max-width: 768px) {
+    .wrapper {
+      align-items: start;
+      display: flex;
+      padding: 5px;
+      
+      .active {
+        display: grid;
+        gap: 6px;
+        align-items: center;
+      }
+
+      nav {
+        grid-area: nav;
+        display: none;
+
+        ul {
+          gap: 5px;
+          width: auto;
+          flex-direction: column; 
+          justify-content: flex-start; 
+        }
+      }
+    }
+
+    .btn {
+      gap: 2px;
+      margin-right: 16px;
+      grid-area: btn;
+      display: flex;
+      justify-content: center;
+    }
+
+    .burger {
+      grid-area: burger;
+      display: flex;
+    }
+
+    .wrapper {
+      grid-template-columns: 1fr 40px;
+    }
+
+    nav {
+      display: none;
+    }
+
+    .btn {
+      display: grid;
+      gap: 5px;
+    }
+  }
+}

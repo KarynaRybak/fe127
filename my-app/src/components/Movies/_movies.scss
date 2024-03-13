@@ -1,0 +1,132 @@
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100px;
+}
+
+  .form-search {
+  padding: 40px;
+  height: 40px;
+  width: 100%;
+  
+    form {
+    position: absolute;
+    align-items: center;
+  
+      input[type="text"] {
+        width: 40vh;
+        padding: 8px 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        margin-right: 10px;
+        font-size: 16px;
+        outline: none;
+        position: absolute;
+        color: #333;
+        background-color: rgb(216, 211, 211);
+      }
+  
+      button[type="submit"] {
+        position: relative;
+        left: 230px;
+        top: 10px;
+        outline: none;
+        border: none;
+        background: none;
+      }
+    }
+  }
+  
+  .movies {
+    padding: 50px 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    margin: 10px;
+  
+    .movie {
+      border-radius: 10px;
+      overflow: hidden;
+      position: relative;
+  
+      .wishlist {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        width: 30px;
+        height: 30px;
+        color: red;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: background-color 0.3s ease;
+  
+        &:hover {
+          cursor: pointer;
+        }
+  
+        svg {
+          width: 70%;
+          height: auto;
+          fill: none;
+          stroke: red;
+          stroke-width: 2px;
+        }
+  
+        &.active {
+          background-color: red;
+          border-radius: 50%;
+          border: none;
+          color: white;
+        }
+      }
+  
+      img {
+        height: auto;
+        width: 100%;
+        object-fit: cover;
+      }
+  
+      h2 {
+        margin-top: 16px;
+        font-size: 20px;
+        font-weight: bold;
+      }
+  
+      p {
+        margin-top: 24px;
+        height: 150px;
+        overflow: hidden;
+      }
+    }
+  
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+  
+      .movie {
+        h2 {
+          font-size: 19px;
+          font-weight: bold;
+        }
+  
+        p {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .form-search {
+      padding: 5px;
+      width: 100%;
+      height: auto;
+    }
+  
+    .movies {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+  }

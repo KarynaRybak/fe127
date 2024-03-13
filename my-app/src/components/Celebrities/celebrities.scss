@@ -1,0 +1,63 @@
+.celebrities-container {
+  margin-top: 80px;
+   
+  h2 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+    font-size: 46px;
+    align-items: center;
+    font-weight: bold;  
+  }
+    
+    h3 {
+      font-size: 25px;
+      font-weight: bold;
+    }
+    h4 {
+      font-size: 20px;
+      font-weight: bold;
+    }
+    ul {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); 
+      gap: 10px;
+    }
+    
+    @media (max-width: 768px) {
+    h2 {
+      font-size: 36px; 
+    }
+    
+      ul {
+        grid-template-columns: 1fr; 
+          li {
+            padding: 5px;
+              img {
+                width: 100%;
+                height: auto;
+               }
+               span {
+                 top: 10px;
+                 font-size: 20px;
+                }
+            }
+        }
+        .details {
+          font-size: 20px;
+          padding: 5px;
+          h3 {
+            font-size: 25px;
+            font-weight: bold;
+            margin-bottom: 10px;
+          }
+            h4 {
+              font-size: 20px;
+              font-weight: bold;
+            }
+        p {
+          font-size: 16px; 
+        }
+      }
+    }
+}

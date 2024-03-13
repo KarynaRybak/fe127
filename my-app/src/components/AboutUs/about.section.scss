@@ -1,0 +1,39 @@
+.AboutUs {
+  background: url(./img/bgs1.png) no-repeat scroll 0 0/cover;
+  padding: 40px;
+  width: 100%;
+  text-align: center;
+
+    h2 {
+      color: #fff;
+      text-transform: capitalize;
+      font-family: 'Roboto Condensed', sans-serif;
+      letter-spacing: 2px;
+      font-size: 38px;
+      font-weight: 400;
+      text-shadow: 1px 1px 1px rgba(0, 0, 0, .004);
+    }
+
+    ul {
+      text-align: center;
+      margin-top: 15px;
+
+        li {
+          display: inline-block;
+          text-transform: capitalize;
+          color: #fff;
+            a {
+            color: #fff; 
+            }
+            &.activeAbout {
+              color: #ec7532;
+
+                &:before {
+                  content: "/ ";
+                  padding: 0 5px;
+                  color: #ccc;
+                }
+            }
+        }
+    }
+}

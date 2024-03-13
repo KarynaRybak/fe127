@@ -1,0 +1,36 @@
+@mixin adaptiv-font($pcSize, $mobSize) {
+  $addSize: $pcSize - $mobSize;
+  $layoutWidth: 1410 - 320;
+  font-size: calc(#{$mobSize}px + #{$addSize} * (100vw - 320px) / #{$layoutWidth});
+}
+.page-404 {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+  img {
+    width: 100%;
+    max-width: 600px;
+    justify-content: center;
+  }
+  h3 {
+    transition: all 0.3s ease-out 0s;
+    color: #000;
+    text-transform: uppercase;
+    font-family: "Protest Revolution", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  a {
+    border: 1px solid #000;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding:  0 45px;
+    color: #000;
+    text-decoration: none;
+  }
+}

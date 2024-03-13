@@ -1,0 +1,111 @@
+.footer-container { 
+  background-color: black;
+  padding: 70px ;
+  margin-top: 50px;
+  font-size: 20px;
+  .footer-content-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+    margin: 30px;
+
+}
+  .block {
+    display: block;
+  }
+  
+  .address {
+    margin-top: 25px;
+    p {
+      margin: 10px;
+      letter-spacing: 1.5px;
+      color: #eee;
+      text-transform: capitalize;
+    }
+}
+  .footer-contact {
+    a{
+      color: white;
+    }
+    .social-icon {
+      color: #757575; 
+      transition: color 0.3s ease;
+        &:hover {
+          color: #f0900a; 
+        }
+    }
+  nav {
+    ul {
+      color: white;
+      display: flex;
+      gap: 15px;
+      margin: 15px;
+    }
+  }
+}
+  .quick-links {
+    justify-content: center;
+    align-items: center;
+    display:block;
+    margin: 10px;
+  h4 {
+    font-size: 17px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #ec7532;
+    font-family: 'Roboto Condensed', sans-serif;
+    margin-bottom: 15px
+}
+ 
+li {
+    font-size: 25px;
+  a {
+    font-size: 13px;
+    display: inline-block;
+    letter-spacing: 1px;
+    color: #eee;
+    text-transform: capitalize;
+  }
+ }
+}
+    h3 {
+      font-size: 17px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: #ec7532;
+      font-family: 'Roboto Condensed', sans-serif;
+      margin-bottom: 15px;
+    } 
+    p {
+      margin: 10px;
+      font-size: 13px;
+      letter-spacing: 1.5px;
+      color: #eee;
+      text-transform: capitalize;
+    }
+  img {
+    display: block;
+    margin: 5px;
+  }
+  .payback-number {
+    color: #ec7532;
+  }    
+    }
+    @media (max-width: 768px) {
+      .footer-container {
+        .footer-content-container{
+        display: grid;
+        gap: 15px;
+        grid-template-columns: 1fr;
+        width: 100%;
+        height: auto;
+    }
+    
+    .app-block {
+    display: block;
+    }
+  }
+    }
